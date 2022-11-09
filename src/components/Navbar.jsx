@@ -13,7 +13,7 @@ const Navbar = () => {
                     <Link className="navbar-brand text-uppercase text-warning text-center" to="/home"><strong className="ms-auto">Currency Exchange Rate
                     </strong>
                     </Link>
-                    <Link to="/" className="navbar-brand text-uppercase text-warning text-center" onClick={localStorage.clear()}><div className="form-inline text-warning" style={{ cursor: "pointer", textDecoration: "none" }}>Exit</div>
+                    <Link to="/" className="navbar-brand text-uppercase text-warning text-center" onClick={localStorage.clear()}><div className="form-inline text-warning" style={{ cursor: "pointer", textDecoration: "none" }}><strong> Exit</strong></div>
                     </Link></div>
             </nav>
         </div>

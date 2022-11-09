@@ -11,8 +11,8 @@ function Home() {
   return (
     <div style={{ paddingBottom: "100px" }}>
       <Navbar />
-      <h2 className="text-white text-uppercase mt-1">Welcome {name} 😇</h2>
-      <h4 className="text-white text-uppercase mt-1 text-end">Logged in at {Houres} : {Minutes} </h4>
+      <h2 className=" text-uppercase mt-1 text-warning">Welcome {name} 😇</h2>
+      {/* <h4 className="text-uppercase mt-1 text-end text-warning">Logged in at {Houres} : {Minutes} </h4> */}
       <div className="container">
         <div className="row">
           <div className="col-lg-2"></div>
