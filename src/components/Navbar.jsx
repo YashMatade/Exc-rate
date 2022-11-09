@@ -9,13 +9,12 @@ const Navbar = () => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div className="container">
-                    <Link className="navbar-brand text-uppercase text-warning text-center" to="/home"><strong className="ms-auto">Currency Exchange Rate 
+                <div className="container-fluid">
+                    <Link className="navbar-brand text-uppercase text-warning text-center" to="/home"><strong className="ms-auto">Currency Exchange Rate
                     </strong>
                     </Link>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    </div>
-                </div>
+                    <Link to="/" className="navbar-brand text-uppercase text-warning text-center" onClick={localStorage.clear()}><div className="form-inline text-warning" style={{ cursor: "pointer", textDecoration: "none" }}>Exit</div>
+                    </Link></div>
             </nav>
         </div>
     )

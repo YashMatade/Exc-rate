@@ -5,9 +5,14 @@ import Navbar from "./Navbar";
 import Cards from "./Cards";
 
 function Home() {
+  let name = localStorage.getItem("name");
+  let Houres = new Date().getHours();
+  let Minutes = new Date().getMinutes();
   return (
-    <div style={{paddingBottom:"100px"}}>
+    <div style={{ paddingBottom: "100px" }}>
       <Navbar />
+      <h2 className="text-white text-uppercase mt-1">Welcome {name} 😇</h2>
+      <h4 className="text-white text-uppercase mt-1 text-end">Logged in at {Houres} : {Minutes} </h4>
       <div className="container">
         <div className="row">
           <div className="col-lg-2"></div>
@@ -18,7 +23,7 @@ function Home() {
         </div>
       </div>
       <Cards />
-    
+
     </div>
   );
 }
