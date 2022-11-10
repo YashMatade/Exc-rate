@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import axios from 'axios';
 import img from "../../src/assets/forex.jpg";
 const Login = () => {
   const [name, setName] = useState("");
@@ -28,8 +29,19 @@ const Login = () => {
     } else {
       validate = true;
       navigate("/home");
+      let data = { name: name, email: email }
+      axios.put("http://localhost:8081/user/submit", data).then((res) => {
+        console.log(res.data.data)
+      });
     }
   }
+
+
+  useEffect(() => {
+
+
+
+  }, [])
 
   return (
     <section className="vh-100" >

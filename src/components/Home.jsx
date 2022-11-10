@@ -6,8 +6,7 @@ import Cards from "./Cards";
 
 function Home() {
   let name = localStorage.getItem("name");
-  let Houres = new Date().getHours();
-  let Minutes = new Date().getMinutes();
+
   return (
     <div style={{ paddingBottom: "100px" }}>
       <Navbar />
@@ -22,8 +21,6 @@ function Home() {
           <div className="col-lg-2"></div>
         </div>
       </div>
-      <Cards />
-
     </div>
   );
 }
