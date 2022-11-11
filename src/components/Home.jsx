@@ -7,9 +7,11 @@ import Cards from "./Cards";
 function Home() {
   let name = localStorage.getItem("name");
 
+
   return (
     <div style={{ paddingBottom: "100px" }}>
       <Navbar />
+
       <h2 className=" text-uppercase mt-1 text-warning">Welcome {name} 😇</h2>
       {/* <h4 className="text-uppercase mt-1 text-end text-warning">Logged in at {Houres} : {Minutes} </h4> */}
       <div className="container">
@@ -20,6 +22,7 @@ function Home() {
           </div>
           <div className="col-lg-2"></div>
         </div>
+        
       </div>
     </div>
   );
